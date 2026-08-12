@@ -89,7 +89,7 @@ def handle_message(event):
                 prompt = "請給專業建議!"               
                 
                 completion = client.models.generate_content(
-                    model="gemini-3-flash",  # 請確保模型名稱與權限正確
+                    model="gemini-3-flash-preview",  # 請確保模型名稱與權限正確
                     contents=[sample_doc, prompt],
                     config=generation_config
                 )
