@@ -97,7 +97,7 @@ def handle_message(event):
                     prompt = "請給專業建議!"               
                 # gemini-2.5-flash
                 completion = client.models.generate_content(
-                                    model="gemini-2.5-flash",
+                                    model="gemini-3.0-flash",
                                     contents=[sample_doc, prompt],
                                     config=generation_config).text
             # 取得生成結果
